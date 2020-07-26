@@ -1,5 +1,5 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const publicPath = '/vue-admin-crm-flexmust/';
+const publicPath = '/vue-admin-food-delivery-alseek/';
 module.exports = {
   publicPath: publicPath,
   pages: {
@@ -38,8 +38,8 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new CopyWebpackPlugin([
-        {from: 'src/assets/img', to: publicPath + 'assets/img'},
-        {from: 'src/assets/fonts', to: publicPath+ 'assets/fonts'}
+        {from: 'src/assets/img', to: 'assets/img'},
+        {from: 'src/assets/fonts', to: 'assets/fonts'}
       ])
     ]
   }
